@@ -1,0 +1,173 @@
+@prefix : <urn:webprotege:ontology:4c97e3ef-098a-441b-8912-d550ec3c31a8#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:webprotege:ontology:4c97e3ef-098a-441b-8912-d550ec3c31a8> .
+
+<urn:webprotege:ontology:4c97e3ef-098a-441b-8912-d550ec3c31a8> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R8osZQxFS1rEewV47b6Hmko
+<http://webprotege.stanford.edu/R8osZQxFS1rEewV47b6Hmko> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R7vpyvUagTwpVnI0Hef5ob4> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RDFyd7cyJQnWsJCcsfiY4QP> ;
+                                                         rdfs:label "trabalha" .
+
+
+###  http://webprotege.stanford.edu/RqTygeDRn0Qf62Uf6hpuuX
+<http://webprotege.stanford.edu/RqTygeDRn0Qf62Uf6hpuuX> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/R7VlM9b1y2pmvNDzt6c7Swy> ;
+                                                        rdfs:range <http://webprotege.stanford.edu/RjmyQWdpN7huAn6Sw8CFta> ;
+                                                        rdfs:label "estuda" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://webprotege.stanford.edu/RDBD05u1QICj4BIKsoZjr8X
+<http://webprotege.stanford.edu/RDBD05u1QICj4BIKsoZjr8X> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RBu5vSvlfhSDjo35S5W6DDC> ;
+                                                         rdfs:label "temNome" .
+
+
+###  http://webprotege.stanford.edu/RUTUQpDp0fmedt6868a2fh
+<http://webprotege.stanford.edu/RUTUQpDp0fmedt6868a2fh> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/RDsMB0VluorhqlGbESvhLlY> ;
+                                                        rdfs:label "temNomeFantasia" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R7VlM9b1y2pmvNDzt6c7Swy
+<http://webprotege.stanford.edu/R7VlM9b1y2pmvNDzt6c7Swy> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBu5vSvlfhSDjo35S5W6DDC> ;
+                                                         rdfs:label "Estudante" .
+
+
+###  http://webprotege.stanford.edu/R7vpyvUagTwpVnI0Hef5ob4
+<http://webprotege.stanford.edu/R7vpyvUagTwpVnI0Hef5ob4> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBu5vSvlfhSDjo35S5W6DDC> ;
+                                                         rdfs:label "Empregado" .
+
+
+###  http://webprotege.stanford.edu/RBu5vSvlfhSDjo35S5W6DDC
+<http://webprotege.stanford.edu/RBu5vSvlfhSDjo35S5W6DDC> rdf:type owl:Class ;
+                                                         rdfs:label "Pessoa"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDFyd7cyJQnWsJCcsfiY4QP
+<http://webprotege.stanford.edu/RDFyd7cyJQnWsJCcsfiY4QP> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RDsMB0VluorhqlGbESvhLlY> ;
+                                                         rdfs:label "Empresa" .
+
+
+###  http://webprotege.stanford.edu/RDsMB0VluorhqlGbESvhLlY
+<http://webprotege.stanford.edu/RDsMB0VluorhqlGbESvhLlY> rdf:type owl:Class ;
+                                                         rdfs:label "Organizacao" .
+
+
+###  http://webprotege.stanford.edu/RjmyQWdpN7huAn6Sw8CFta
+<http://webprotege.stanford.edu/RjmyQWdpN7huAn6Sw8CFta> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RDsMB0VluorhqlGbESvhLlY> ;
+                                                        rdfs:label "Escola" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://webprotege.stanford.edu/R7y0HnJLsR6uQKYLNgCNtY4
+<http://webprotege.stanford.edu/R7y0HnJLsR6uQKYLNgCNtY4> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R7vpyvUagTwpVnI0Hef5ob4> ;
+                                                         <http://webprotege.stanford.edu/R8osZQxFS1rEewV47b6Hmko> <http://webprotege.stanford.edu/RB6VlmWrCZ1gatAqFpnKxQU> ;
+                                                         <http://webprotege.stanford.edu/RDBD05u1QICj4BIKsoZjr8X> "\"Jaime\""^^xsd:string ;
+                                                         rdfs:label "Jaime" .
+
+
+###  http://webprotege.stanford.edu/R8CYl0SdiF6tlf60zuFf4ZM
+<http://webprotege.stanford.edu/R8CYl0SdiF6tlf60zuFf4ZM> rdf:type owl:NamedIndividual ;
+                                                         <http://webprotege.stanford.edu/RDBD05u1QICj4BIKsoZjr8X> "\"Thiago\""^^xsd:string ;
+                                                         rdfs:label "Thiago" .
+
+
+###  http://webprotege.stanford.edu/R8kFtiYqoTfai86unfXh5AY
+<http://webprotege.stanford.edu/R8kFtiYqoTfai86unfXh5AY> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDFyd7cyJQnWsJCcsfiY4QP> ;
+                                                         <http://webprotege.stanford.edu/RUTUQpDp0fmedt6868a2fh> "\"GoogleBH\""^^xsd:string ;
+                                                         rdfs:label "GoogleBH" .
+
+
+###  http://webprotege.stanford.edu/R8xPpcekJ4yb2KxKrtuLymk
+<http://webprotege.stanford.edu/R8xPpcekJ4yb2KxKrtuLymk> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R7VlM9b1y2pmvNDzt6c7Swy> ;
+                                                         <http://webprotege.stanford.edu/RqTygeDRn0Qf62Uf6hpuuX> <http://webprotege.stanford.edu/R9Ejj4IqaOSpDquTX2bvC7a> ;
+                                                         <http://webprotege.stanford.edu/RDBD05u1QICj4BIKsoZjr8X> "\"João\""^^xsd:string ;
+                                                         rdfs:label "Joao" .
+
+
+###  http://webprotege.stanford.edu/R9Ejj4IqaOSpDquTX2bvC7a
+<http://webprotege.stanford.edu/R9Ejj4IqaOSpDquTX2bvC7a> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RjmyQWdpN7huAn6Sw8CFta> ;
+                                                         <http://webprotege.stanford.edu/RUTUQpDp0fmedt6868a2fh> "\"Universidade Federal de Minas Gerais\""^^xsd:string ;
+                                                         rdfs:label "UFMG" .
+
+
+###  http://webprotege.stanford.edu/R9rmTiYLwZkBj9zG9yavPmY
+<http://webprotege.stanford.edu/R9rmTiYLwZkBj9zG9yavPmY> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R7vpyvUagTwpVnI0Hef5ob4> ;
+                                                         <http://webprotege.stanford.edu/R8osZQxFS1rEewV47b6Hmko> <http://webprotege.stanford.edu/R8kFtiYqoTfai86unfXh5AY> ;
+                                                         <http://webprotege.stanford.edu/RDBD05u1QICj4BIKsoZjr8X> "\"Maria\""^^xsd:string ;
+                                                         rdfs:label "Maria" .
+
+
+###  http://webprotege.stanford.edu/R9z3ioK9qvkjATztOaF0wDF
+<http://webprotege.stanford.edu/R9z3ioK9qvkjATztOaF0wDF> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R7VlM9b1y2pmvNDzt6c7Swy> ;
+                                                         <http://webprotege.stanford.edu/RqTygeDRn0Qf62Uf6hpuuX> <http://webprotege.stanford.edu/R9Ejj4IqaOSpDquTX2bvC7a> ;
+                                                         <http://webprotege.stanford.edu/RDBD05u1QICj4BIKsoZjr8X> "\"Kiko\""^^xsd:string ;
+                                                         rdfs:label "Kiko" .
+
+
+###  http://webprotege.stanford.edu/RB6VlmWrCZ1gatAqFpnKxQU
+<http://webprotege.stanford.edu/RB6VlmWrCZ1gatAqFpnKxQU> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDFyd7cyJQnWsJCcsfiY4QP> ;
+                                                         <http://webprotege.stanford.edu/RUTUQpDp0fmedt6868a2fh> "\"Usiminas\""^^xsd:string ;
+                                                         rdfs:label "Usiminas" .
+
+
+###  http://webprotege.stanford.edu/RCvjm36r8SMDTacnBegaa34
+<http://webprotege.stanford.edu/RCvjm36r8SMDTacnBegaa34> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R7vpyvUagTwpVnI0Hef5ob4> ;
+                                                         <http://webprotege.stanford.edu/R8osZQxFS1rEewV47b6Hmko> <http://webprotege.stanford.edu/R8kFtiYqoTfai86unfXh5AY> ;
+                                                         <http://webprotege.stanford.edu/RDBD05u1QICj4BIKsoZjr8X> "\"André\""^^xsd:string ;
+                                                         rdfs:label "Andre" .
+
+
+###  http://webprotege.stanford.edu/RHrGnK4Dly7LxK9rlo7bbF
+<http://webprotege.stanford.edu/RHrGnK4Dly7LxK9rlo7bbF> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/R7VlM9b1y2pmvNDzt6c7Swy> ;
+                                                        <http://webprotege.stanford.edu/RqTygeDRn0Qf62Uf6hpuuX> <http://webprotege.stanford.edu/R9Ejj4IqaOSpDquTX2bvC7a> ;
+                                                        <http://webprotege.stanford.edu/RDBD05u1QICj4BIKsoZjr8X> "\"Luciana\""^^xsd:string ;
+                                                        rdfs:label "Luciana" .
+
+
+###  http://webprotege.stanford.edu/RpNaedwPzlLmFOW6dxJ1DI
+<http://webprotege.stanford.edu/RpNaedwPzlLmFOW6dxJ1DI> rdf:type owl:NamedIndividual ;
+                                                        <http://webprotege.stanford.edu/R8osZQxFS1rEewV47b6Hmko> <http://webprotege.stanford.edu/R8kFtiYqoTfai86unfXh5AY> ;
+                                                        <http://webprotege.stanford.edu/RDBD05u1QICj4BIKsoZjr8X> "\"Zuleika\""^^xsd:string ;
+                                                        rdfs:label "Zuleika" .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
