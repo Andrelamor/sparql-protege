@@ -1,0 +1,145 @@
+@prefix : <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-6#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-6> .
+
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-6> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/assistenteLeciona
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/assistenteLeciona> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/leciona> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/leciona
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/leciona> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/titularLeciona
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/titularLeciona> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/leciona> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Aluno
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Aluno> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Curso
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Curso> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/CursoLaboratório
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/CursoLaboratório> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Curso> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/CursoRegular
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/CursoRegular> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Curso> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Lição
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Lição> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Professor
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Professor> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ProfessorAssistente
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ProfessorAssistente> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Professor> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ProfessorTitular
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ProfessorTitular> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Professor> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Exercicio1
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Exercicio1> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Lição> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Exercicio2
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Exercicio2> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Lição> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ExercicioLaboratorio
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ExercicioLaboratorio> rdf:type owl:NamedIndividual ,
+                                                                                                       <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Lição> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Huguinho
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Huguinho> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Aluno> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Joao
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Joao> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Professor> ,
+                                                                                       <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ProfessorAssistente> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Jose
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Jose> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Professor> ,
+                                                                                       <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ProfessorTitular> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Luizinho
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Luizinho> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Aluno> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Madalena
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Madalena> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Professor> ,
+                                                                                           <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ProfessorAssistente> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Maria
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Maria> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Professor> ,
+                                                                                        <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ProfessorTitular> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Metadados
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Metadados> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Curso> ,
+                                                                                            <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/CursoLaboratório> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Ontologias
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Ontologias> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Curso> ,
+                                                                                             <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/CursoLaboratório> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Semantica
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Semantica> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Curso> ,
+                                                                                            <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/CursoRegular> .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Zezinho
+<http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Zezinho> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Aluno> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
