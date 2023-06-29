@@ -12,6 +12,13 @@
 #    Object Properties
 #################################################################
 
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3#ehCursadoPor
+:ehCursadoPor rdf:type owl:ObjectProperty ;
+              owl:inverseOf :cursa ;
+              rdfs:domain :Curso ;
+              rdfs:range :Aluno .
+
+
 ###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/assistenteLeciona
 :assistenteLeciona rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :leciona ;
@@ -223,6 +230,8 @@
 
 ###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Metadados
 :Metadados rdf:type owl:NamedIndividual ;
+           :ehCursadoPor :Luizinho ,
+                         :Zezinho ;
            :ehOrganizadoPor :Madalena ;
            :creditos 3 .
 
@@ -230,6 +239,8 @@
 ###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Ontologias
 :Ontologias rdf:type owl:NamedIndividual ,
                      :CursoLaboratório ;
+            :ehCursadoPor :Huguinho ,
+                          :Luizinho ;
             :ehOrganizadoPor :Joao ;
             :creditos 2 .
 
@@ -237,6 +248,8 @@
 ###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/Semantica
 :Semantica rdf:type owl:NamedIndividual ,
                     :CursoRegular ;
+           :ehCursadoPor :Huguinho ,
+                         :Zezinho ;
            :ehOrganizadoPor :Maria ;
            :creditos 4 .
 
