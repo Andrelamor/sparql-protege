@@ -25,6 +25,7 @@ WHERE {
 ````
 
 ![](ensino/1.png)
+![image](https://github.com/Andrelamor/sparql-protege/assets/52294411/0ac200ed-b82e-4e13-aed5-05c166e689d7)
 
 ## 2. listar os cursos por professores organizadores e ordenados pelos créditos
 ````
@@ -37,6 +38,7 @@ WHERE {
 } ORDER BY ?z
 ````
 ![](ensino/2.png)
+![image](https://github.com/Andrelamor/sparql-protege/assets/52294411/b829e99a-c59d-48a3-bf25-5fb34ccf69f4)
 
 ## 3. listar todos os professores e ordenar pelo título
 
@@ -50,6 +52,7 @@ WHERE {
 ````
 
 ![](ensino/3.png)
+![image](https://github.com/Andrelamor/sparql-protege/assets/52294411/8e67b113-98b3-4b2b-8e8d-2beea5099937)
 
 ## 4. listar todos os cursos organizados por professores assistentes, ordenados pelos nomes dos professores
 
@@ -62,6 +65,7 @@ WHERE {
 } ORDER BY ?x
 ````
 ![](ensino/4.png)
+![image](https://github.com/Andrelamor/sparql-protege/assets/52294411/1e297d78-0ca6-4b5d-a0a4-29f39b2aa13a)
 
 ## 5. quantos alunos por curso
 
