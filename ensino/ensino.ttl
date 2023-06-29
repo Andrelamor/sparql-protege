@@ -12,11 +12,11 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3#ehCursadoPor
-:ehCursadoPor rdf:type owl:ObjectProperty ;
-              owl:inverseOf :cursa ;
-              rdfs:domain :Curso ;
-              rdfs:range :Aluno .
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3#tem
+:tem rdf:type owl:ObjectProperty ;
+     owl:inverseOf :ehPartede ;
+     rdfs:domain :Curso ;
+     rdfs:range :Lição .
 
 
 ###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/assistenteLeciona
@@ -28,8 +28,15 @@
 
 ###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/cursa
 :cursa rdf:type owl:ObjectProperty ;
+       owl:inverseOf :ehCursadoPor ;
        rdfs:domain :Aluno ;
        rdfs:range :Curso .
+
+
+###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ehCursadoPor
+:ehCursadoPor rdf:type owl:ObjectProperty ;
+              rdfs:domain :Curso ;
+              rdfs:range :Aluno .
 
 
 ###  http://www.semanticweb.org/andre/ontologies/2023/5/untitled-ontology-3/ehOrganizadoPor
